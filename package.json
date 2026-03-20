@@ -1,9 +1,10 @@
 {
   "name": "poll-app-root",
+  "type": "module",
   "private": true,
   "scripts": {
-    "install-all": "cd server && npm install && cd ../client && npm install",
-    "build": "npm run install-all && cd client && npm run build",
-    "start": "cd server && npm start"
+    "postinstall": "cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js"
   }
 }
