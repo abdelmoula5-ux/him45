@@ -1,0 +1,9 @@
+{
+  "name": "poll-app-root",
+  "private": true,
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "build": "npm run install-all && cd client && npm run build",
+    "start": "cd server && npm start"
+  }
+}
